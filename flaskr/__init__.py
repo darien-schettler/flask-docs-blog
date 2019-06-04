@@ -56,8 +56,8 @@ def create_app(test_config=None):
         app.config.from_pyfile('config.py', silent=True)
     else:
         # test_config can also be passed to the factory, and will be used instead of the instance configuration
-        #       -   This is so the tests you’ll write later in the tutorial can be configured independently of any development 
-        #           values you have configured.
+        #       -   This is so the tests you’ll write later in the tutorial can be configured independently
+        #           of any development values you have configured.
         app.config.from_mapping(test_config)
 
     # Next we ensure that app.instance_path exists
@@ -75,5 +75,12 @@ def create_app(test_config=None):
 
     from flaskr import db
     db.init_app(app)
-    
+
+    # Import and register the blueprint from the factory using app.register_blueprint(). Place the new code at the
+    # end of the factory function before returning the app.
+    #
+    # The authentication blueprint will have views to register new users and to log in and log out.
+    from . import auth
+    app.register_blueprint(auth.bp)
+
     return app
