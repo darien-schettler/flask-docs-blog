@@ -29,7 +29,7 @@ def create_app(test_config=None):
     #
     #       2.  instance_relative_config=True 
     #               - Tells the app that configuration files are relative to the instance folder
-    #               - The instance folder is located outside the hello-world-flask package
+    #               - The instance folder is located outside the app package
     #               - The instance folder can hold local data that shouldn’t be committed to version control (db/config/secrets)
     app = Flask(__name__, instance_relative_config=True)
 
@@ -40,13 +40,13 @@ def create_app(test_config=None):
     #               - It’s set to 'dev' to provide a convenient value during development
     #               - This value should be overridden with a random value when deploying
     #
-    #       2.  DATABASE=os.path.join(app.instance_path, 'hello-world-flask.sqlite'),
+    #       2.  DATABASE=os.path.join(app.instance_path, 'flaskr.sqlite'),
     #               - Is the path where the SQLite database file will be saved
     #               - It’s under app.instance_path, which is the path that Flask has chosen for the instance folder.
     #               - You’ll learn more about the database in the next section.
     app.config.from_mapping(
         SECRET_KEY='dev',
-        DATABASE=os.path.join(app.instance_path, 'hello-world-flask.sqlite'),
+        DATABASE=os.path.join(app.instance_path, 'flaskr.sqlite'),
     )
 
     if test_config is None:
@@ -73,4 +73,7 @@ def create_app(test_config=None):
     def hello():
         return 'Hello, World!'
 
+    from flaskr import db
+    db.init_app(app)
+    
     return app
