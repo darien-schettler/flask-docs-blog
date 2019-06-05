@@ -28,13 +28,13 @@ Your secret key should be a string of random bytes and not an easily guessable s
 
 You can use the following command to output a random secret key:
 
-- python -c 'import os; print(os.urandom(16))'
+<tab>python -c 'import os; print(os.urandom(16))'
 
 b'_5#y2L"F4Q8z\n\xec]/'<br><br>
 Create the config.py file in the instance folder, which the factory will read from if it exists. Copy the generated value into it.
 
-- venv/var/flaskr-instance/config.py<br>
-- SECRET_KEY = b'_5#y2L"F4Q8z\n\xec]/'<br><br>
+<tab>venv/var/flaskr-instance/config.py<br>
+<tab>SECRET_KEY = b'_5#y2L"F4Q8z\n\xec]/'<br><br>
 You can also set any other necessary configuration here, although SECRET_KEY is the only one needed for Flaskr.
 
 <strong>Run with a Production Server</strong><br>
@@ -44,9 +44,9 @@ The development server is provided by Werkzeug for convenience, but is not desig
 <strong>Instead, use a production WSGI server.</strong><br><br>
 For example, to use Waitress, first install it in the virtual environment:
 
-- pip install waitress<br><br>
+<tab>pip install waitress<br><br>
 You need to tell Waitress about your application, but it doesn’t use FLASK_APP like flask run does. You need to tell it to import and call the application factory to get an application object.
 
-- waitress-serve --call 'flaskr:create_app'
+<tab>waitress-serve --call 'flaskr:create_app'
 
 Serving on http://0.0.0.0:8080</p>
