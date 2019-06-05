@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a875e0ab-3900-4016-af89-aaddb8fd40d2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/flaskr/blog.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/static/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/templates/blog/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/templates/blog/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskr/templates/blog/update.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskr/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskr/templates/auth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/templates/auth/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskr/templates/auth/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/templates/auth/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskr/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -70,11 +61,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flaskr/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
               <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setup.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/setup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -125,7 +125,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/flaskr/schema.sql" />
         <option value="$PROJECT_DIR$/flaskr/db.py" />
         <option value="$PROJECT_DIR$/flaskr/auth.py" />
@@ -137,6 +136,7 @@
         <option value="$PROJECT_DIR$/flaskr/templates/blog/update.html" />
         <option value="$PROJECT_DIR$/flaskr/templates/blog/create.html" />
         <option value="$PROJECT_DIR$/flaskr/templates/base.html" />
+        <option value="$PROJECT_DIR$/setup.py" />
       </list>
     </option>
   </component>
@@ -362,9 +362,6 @@
     <entry file="file://$PROJECT_DIR$/flaskr/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/../acorn-microblog/microblog.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -455,6 +452,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
         </state>
       </provider>
     </entry>
