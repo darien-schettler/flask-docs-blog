@@ -23,7 +23,7 @@
 <hr>
 <h3>Final Notes On Deployment From Flask Docs</h3>
 <p>
-<strong>Configure the Secret Key</strong><br>
+<strong>Configure the Secret Key</strong><br><br>
 Your secret key should be a string of random bytes and not an easily guessable string
 
 You can use the following command to output a random secret key:
@@ -37,7 +37,7 @@ Create the config.py file in the instance folder, which the factory will read fr
 <tab>SECRET_KEY = b'_5#y2L"F4Q8z\n\xec]/'<br><br>
 You can also set any other necessary configuration here, although SECRET_KEY is the only one needed for Flaskr.
 
-<strong>Run with a Production Server</strong><br>
+<strong>Run with a Production Server</strong><br><br>
 When running publicly rather than in development, you should not use the built-in development server (flask run).<br>
 The development server is provided by Werkzeug for convenience, but is not designed to be particularly efficient, stable, or secure.
 
